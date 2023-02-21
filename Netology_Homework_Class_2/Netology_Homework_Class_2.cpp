@@ -12,7 +12,7 @@ public:
 	//Методы
 	void plus() { count++; }
 	void minus() { count--; }
-	void equal() { cout << count << endl; }
+	int equal() { return count; }
 
 private:
 	int count;
@@ -50,7 +50,7 @@ int main()
 			cnt.minus();
 			break;
 		case '=':
-			cnt.equal();
+			cout << cnt.equal() << endl;
 			break;
 		}
 	} while (c != 'x');
